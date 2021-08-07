@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100vh;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+.top-pattern {
+  position: absolute;
+}
+.bottom-pattern {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.heading {
+  padding: 100px;
+}
+.heading h1 {
+  font-weight: 700;
+  line-height: 1;
+  color: hsl(300, 43%, 22%);
+}
+.heading p {
+  font-weight: 400;
+  color: hsl(303, 10%, 53%);
+}
+.rate i {
+  padding: 0 3px;
+  color: orange;
+}
+.rate p {
+  color: hsl(300, 43%, 22%);
+  font-size: 14px;
+  font-weight: 700;
+  background-color: hsl(300, 24%, 96%);
+  padding: 13px;
+  border-radius: 10px;
+  width: 90%;
+}
+.rate span {
+  margin-left: 10px;
+}
+#secondRate {
+  margin-left: 40px;
+}
+#thirdRate {
+  margin-left: 80px;
+}
+
+.pattern-mobile {
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  .pattern-mobile {
+    visibility: visible;
+  }
+  .pattern-desktop {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  #secondRate {
+    margin-left: 0;
+  }
+  #thirdRate {
+    margin-left: 0;
+  }
+  .heading {
+    padding: 0;
+  }
+  .rate p {
+    text-align: center;
+  }
+  .rate span {
+    display: inline-block;
+  }
+  .rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
